@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="Discover anime, browse popular shows, and keep track of what to watch next.">
+  <title>The Home — Your Anime Destination</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">T</span>HE HOME<span class="brand-dot">.</span></a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a class="active" href="#home">Home</a><a href="#trending">Categories⌄</a><a href="#popular">Our Blog</a><a href="#footer">Contacts</a>
+    </nav>
+    <div class="top-actions">
+      <label class="searchbox"><span>⌕</span><input id="searchInput" type="search" placeholder="Search anime..." aria-label="Search anime"></label>
+      <button class="icon-btn" id="accountBtn" aria-label="Account">♙</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-label="Featured anime">
+      <div class="hero-bg" id="heroBg"></div>
+      <button class="hero-arrow prev" id="prevHero" aria-label="Previous featured anime">‹</button>
+      <div class="hero-content">
+        <span class="eyebrow"><i></i> FEATURED ANIME</span>
+        <p class="hero-kicker" id="heroMeta">ACTION · FANTASY · 2026</p>
+        <h1 id="heroTitle">THE WORLD<br>OF ANIME</h1>
+        <p class="hero-desc" id="heroDesc">Find your next favorite story. Explore unforgettable worlds, powerful heroes, and adventures beyond imagination.</p>
+        <div class="hero-buttons"><button class="primary-btn" id="heroDetails">VIEW DETAILS <span>↗</span></button><a class="ghost-btn" href="#trending">EXPLORE ANIME</a></div>
+      </div>
+      <div class="hero-counter"><span id="heroCount">01</span><b>/</b>03</div>
+      <button class="hero-arrow next" id="nextHero" aria-label="Next featured anime">›</button>
+    </section>
+
+    <section class="section" id="trending">
+      <div class="section-head"><div><span class="section-kicker">WHAT'S HOT</span><h2>TRENDING <em>NOW</em></h2></div><a class="view-all" href="#catalog">VIEW ALL <span>↗</span></a></div>
+      <div class="filter-row" id="filters">
+        <button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Action">Action</button><button class="filter" data-filter="Fantasy">Fantasy</button><button class="filter" data-filter="Romance">Romance</button><button class="filter" data-filter="Adventure">Adventure</button>
+      </div>
+      <div class="anime-grid" id="trendingGrid"></div>
+    </section>
+
+    <section class="section popular-section" id="popular">
+      <div class="section-head"><div><span class="section-kicker">FAN FAVORITES</span><h2>POPULAR <em>SHOWS</em></h2></div><a class="view-all" href="#catalog">VIEW ALL <span>↗</span></a></div>
+      <div class="popular-grid" id="popularGrid"></div>
+    </section>
+
+    <section class="section catalog-section" id="catalog">
+      <div class="section-head"><div><span class="section-kicker">FIND YOUR NEXT WATCH</span><h2>ANIME <em>LIBRARY</em></h2></div><span class="catalog-count" id="catalogCount">0 TITLES</span></div>
+      <div class="anime-grid" id="catalogGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No anime found. Try another title.</p>
+    </section>
+  </main>
+
+  <footer id="footer"><a class="brand" href="#"><span class="brand-mark">T</span>HE HOME<span class="brand-dot">.</span></a><p>Your home for discovering anime. Add your own licensed content and links.</p><span>© 2026 THE HOME. All rights reserved.</span></footer>
+
+  <dialog id="detailsDialog" class="details-dialog">
+    <button class="dialog-close" id="closeDialog" aria-label="Close">×</button>
+    <div class="dialog-art" id="dialogArt"></div>
+    <div class="dialog-info"><span class="section-kicker" id="dialogGenre">ANIME</span><h2 id="dialogTitle">Anime title</h2><p id="dialogDesc"></p><div class="dialog-meta" id="dialogMeta"></div><button class="primary-btn" id="watchBtn">OPEN EPISODE PLAYER ↗</button><p class="dialog-note">Demo template: connect a video source you own or are authorized to embed.</p></div>
+  </dialog>
+  <dialog id="accountDialog" class="account-dialog"><button class="dialog-close" id="closeAccount">×</button><h2>WELCOME, ANIME FAN</h2><p>This is a front-end demo. Add authentication when you connect a backend.</p></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
