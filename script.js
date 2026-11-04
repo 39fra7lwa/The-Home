@@ -1,5 +1,5 @@
 const anime = [
- {id:1,title:"Solo Leveling",year:2024,genre:"Action",rating:"9.2",status:"SUBBED",episodes:12,desc:"A weak hunter gains a mysterious power that lets him grow stronger beyond every limit.",img:"https://cdn.myanimelist.net/images/anime/1806/126216l.jpg"},
+ {id:1,title:"Solo Leveling",year:2024,genre:"Action",rating:"9.2",status:"SUBBED",episodes:12,desc:"A weak hunter gains a mysterious power that lets him grow stronger beyond every limit.",img:"https://m.media-amazon.com/images/M/MV5BM2M4YzdkMTEtMjUyYy00ZWY0LWI5ODQtNGRkZWQ1MzU5MWM2XkEyXkFqcGc@._V1_.jpg"},
  {id:2,title:"Frieren: Beyond Journey's End",year:2023,genre:"Fantasy",rating:"9.3",status:"SUBBED",episodes:28,desc:"After the hero's party defeats the Demon King, an elf mage begins a journey to understand people and time.",img:"https://cdn.myanimelist.net/images/anime/1015/138006l.jpg"},
  {id:3,title:"The Apothecary Diaries",year:2023,genre:"Mystery",rating:"8.9",status:"NEW",episodes:24,desc:"A clever young apothecary solves strange mysteries inside the imperial palace.",img:"https://cdn.myanimelist.net/images/anime/1708/138033l.jpg"},
  {id:4,title:"Demon Slayer",year:2019,genre:"Action",rating:"8.6",status:"HD",episodes:26,desc:"A kindhearted boy joins the Demon Slayer Corps after tragedy changes his family forever.",img:"https://cdn.myanimelist.net/images/anime/1286/99889l.jpg"},
