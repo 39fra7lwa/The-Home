@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090b12"><title>Watch Anime — The Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="watch.css"></head>
+<body class="watch-page">
+<header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">T</span>HE HOME<span class="brand-dot">.</span></a>
+<button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+<nav id="mainNav"><a href="index.html">Home</a><a href="index.html#trending">Categories</a><a href="index.html#popular">Popular</a><a href="#footer">Contacts</a></nav>
+<div class="top-actions"><label class="searchbox"><span>⌕</span><input id="watchSearch" type="search" placeholder="Search anime..." aria-label="Search anime"></label></div></header>
+<main class="watch-main">
+<div class="breadcrumbs"><a href="index.html">HOME</a><span>/</span><a href="index.html#catalog">ANIME LIBRARY</a><span>/</span><b id="crumbTitle">ANIME DETAILS</b></div>
+<section class="watch-layout"><div class="watch-primary">
+<div class="player-shell"><div class="player-topline"><span><i></i> THE HOME PLAYER</span><span id="playerEpisodeLabel">SEASON 1 · EPISODE 1</span></div>
+<div class="video-stage" id="videoStage"><div class="video-placeholder"><div class="play-symbol">▶</div><h2 id="playerAnimeTitle">SELECT AN EPISODE</h2><p id="playerHint">Add an authorized video URL to this episode to enable playback.</p><span class="player-watermark">THE HOME<span>.</span></span></div></div>
+<div class="player-controls"><span id="nowPlaying">Not playing</span><div><button class="player-control" id="prevEpisode">‹ PREVIOUS</button><button class="player-control" id="nextEpisode">NEXT ›</button></div></div></div>
+<section class="episode-panel"><div class="panel-heading"><div><span class="section-kicker">KEEP WATCHING</span><h2>EPISODE <em>LIST</em></h2></div><span class="episode-total" id="episodeTotal">12 EPISODES</span></div>
+<div class="season-tools"><label for="seasonSelect">SEASON</label><select id="seasonSelect"><option value="1">Season 1</option></select><span class="episode-help">Choose an episode to update the player</span></div><div class="episode-list" id="episodeList"></div></section>
+<section class="comments-panel"><div class="panel-heading"><div><span class="section-kicker">JOIN THE COMMUNITY</span><h2>DISCUSSION <em>& COMMENTS</em></h2></div><span class="episode-total" id="commentCount">0 COMMENTS</span></div>
+<form id="commentForm" class="comment-form"><label for="commentName">YOUR NAME</label><input id="commentName" maxlength="30" placeholder="Anime fan" required><label for="commentText">WRITE A COMMENT</label><textarea id="commentText" maxlength="500" rows="4" placeholder="Share your thoughts about this anime..." required></textarea><div class="comment-submit-row"><span>Be kind and respectful to other fans.</span><button class="primary-btn" type="submit">POST COMMENT ↗</button></div></form>
+<div class="comment-list" id="commentList"><p class="no-comments">No comments yet. Be the first to start the discussion.</p></div></section>
+</div><aside class="watch-sidebar">
+<section class="anime-info-card"><div class="detail-poster-wrap"><img id="animePoster" src="" alt="Anime poster"><span class="poster-ribbon" id="animeStatus">SUBBED</span></div>
+<div class="anime-info-content"><span class="section-kicker" id="animeGenre">ACTION · FANTASY</span><h1 id="animeTitle">Anime Title</h1><div class="rating-line"><span>★ <b id="animeRating">9.0</b></span><span id="animeYear">2024</span><span id="animeEpisodes">12 EPS</span></div>
+<p class="anime-description" id="animeDescription"></p><div class="detail-facts"><div><span>TYPE</span><b id="animeType">TV</b></div><div><span>STATUS</span><b id="animeAiring">Completed</b></div><div><span>GENRE</span><b id="animeGenres">Action</b></div><div><span>STUDIO</span><b id="animeStudio">—</b></div></div>
+<button class="favorite-btn" id="favoriteBtn">♡ <span>ADD TO MY LIST</span></button></div></section>
+<section class="side-box"><div class="side-heading"><h3>YOU MAY ALSO LIKE</h3><span>✦</span></div><div id="recommendations" class="recommendations"></div></section><div class="sidebar-note"><span>THE HOME</span> · YOUR ANIME DESTINATION</div>
+</aside></section></main>
+<footer id="footer"><a class="brand" href="index.html"><span class="brand-mark">T</span>HE HOME<span class="brand-dot">.</span></a><p>Your home for discovering anime.</p><span>© 2026 THE HOME. All rights reserved.</span></footer>
+<script src="watch.js"></script></body></html>

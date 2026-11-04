@@ -18,3 +18,7 @@ Open `index.html` in a browser. No build step is required.
 
 ## Important
 Hosting a website does not grant rights to stream anime. Only embed or distribute videos you own, have licensed, or are authorized to use. Do not upload copyrighted episodes without permission.
+
+
+## Anime detail / watch pages
+Every anime card opens `watch.html?id=<anime-id>`. The detail page includes an episode selector, player placeholder, anime information, recommendations, and a demo comments form. Add your authorized video embed URLs to `watch.js` to enable actual playback. Favorites and comments are demo-only and are not stored in a database.
